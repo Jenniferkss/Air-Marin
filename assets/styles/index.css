@@ -1,0 +1,52 @@
+/*Home */ 
+
+width: 90rem;
+height: 64rem;
+background: #FFF; 
+
+/*Login */ 
+width: 90rem;
+height: 64rem;
+flex-shrink: 0; 
+background: url(<path-to-image>) lightgray 50% / cover no-repeat; 
+
+/*Roupas */
+width: 90.5625rem;
+height: 6.625rem;
+flex-shrink: 0;
+background: #172335; 
+
+/*Acessorio*/ 
+width: 90rem;
+height: 64rem;
+background: #FFF;
+
+/*SkinCare*/ 
+width: 90rem;
+height: 64rem;
+flex-shrink: 0;
+background: #FFF; 
+
+/*Biquinis */ 
+width: 90rem;
+height: 64rem;
+background: #FFF;
+
+/*Maio*/ 
+width: 90rem;
+height: 64rem;
+background: #FFF;
+
+/*Lançamentos*/ 
+width: 90rem;
+height: 64rem;
+background: #FFF; 
+
+
+/*Sale*/ 
+width: 90rem;
+height: 64rem;
+flex-shrink: 0;
+background: #FFF;
+
+/*
