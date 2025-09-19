@@ -21,7 +21,7 @@ header {
 
 header img {
   width: 13.8125rem;
-  height: 7.875rem;  
+  height: 7.875rem;
 }
 
 ul {
@@ -29,7 +29,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #5F84A2;
+  background-color: #5f84a2;
 
   display: flex;
   justify-content: center;
@@ -51,4 +51,24 @@ li a {
 
 li a:hover {
   background-color: #111111;
+}
+
+h1 {
+  width: 23.0625rem;
+  height: 4rem;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Marcellus SC";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+  padding-left: 2px;
+}
+
+.Maios {
+border-bottom: 3px solid #00000080;
+width: 80%;
+margin-left: 10%;
 }
