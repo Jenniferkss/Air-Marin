@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+    width: 1440px;
+    height: 1024px;
+    flex-shrink: 0;
+}
+
+
+ header {
+    width: 2000px;
+    height: 132px;
+    flex-shrink: 0;
+    background: #182436;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+ }
+
+
+ .cabecalho {
+    width: 1448px;
+    height: 132px;
+    flex-shrink: 0;
+}
