@@ -1,0 +1,18 @@
+h1 {
+    padding: 20px;
+  width: 318px;
+  height: 74px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Marcellus SC";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.acessorios{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.50);
+    width: 80%;
+    margin-left: 10%;
+}
