@@ -54,8 +54,9 @@ li a:hover {
 }
 
 
-h1 {
-    margin-bottom: 50px;
-    font-size: 70;
-    justify-content: flex-end;
+.Roupas {
+    border-bottom: 3px solid blackground: rgba( 0,0,0,50);
+    width: 80%;
+    margin-left: 10%;
+
 }
