@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+width: 2000px;
+height: 128px;
+flex-shrink: 0;
+background: #172335;
+
+}
+
