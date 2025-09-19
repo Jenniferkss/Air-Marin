@@ -1,52 +1,17 @@
-/*Home */ 
+.img-01{
+    width: 213px;
+    height: 126px;
+    flex-shrink: 0;
+    margin: 0 auto; 
+    aspect-ratio: 213/128;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: url('../img/Gemini_Generated_Image_g5e8w1g5e8w1g5e8.png') lightgray 3.679px -32px / 100% 166.406% no-repeat;
+}
 
-width: 90rem;
-height: 64rem;
-background: #FFF; 
+header {
+    width: 2000px;
+    height: 128px;
+    flex-shrink: 0;
+    background: #172335;
+}
 
-/*Login */ 
-width: 90rem;
-height: 64rem;
-flex-shrink: 0; 
-background: url(<path-to-image>) lightgray 50% / cover no-repeat; 
-
-/*Roupas */
-width: 90.5625rem;
-height: 6.625rem;
-flex-shrink: 0;
-background: #172335; 
-
-/*Acessorio*/ 
-width: 90rem;
-height: 64rem;
-background: #FFF;
-
-/*SkinCare*/ 
-width: 90rem;
-height: 64rem;
-flex-shrink: 0;
-background: #FFF; 
-
-/*Biquinis */ 
-width: 90rem;
-height: 64rem;
-background: #FFF;
-
-/*Maio*/ 
-width: 90rem;
-height: 64rem;
-background: #FFF;
-
-/*Lançamentos*/ 
-width: 90rem;
-height: 64rem;
-background: #FFF; 
-
-
-/*Sale*/ 
-width: 90rem;
-height: 64rem;
-flex-shrink: 0;
-background: #FFF;
-
-/*
