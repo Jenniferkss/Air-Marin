@@ -51,6 +51,7 @@ li a {
 
 li a:hover {
   background-color: #172335;
+  border-radius: 110%;
 }
 
 /* Add a black background color to the top navigation bar */
