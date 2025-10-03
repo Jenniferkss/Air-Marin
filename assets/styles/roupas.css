@@ -60,8 +60,7 @@ li a:hover {
 }
 
 h1 {
-  border-bottom: 30px solid black;
-  background: rgba(0,0,0,0.05);
+  border-bottom: 0.9px solid black;
   width: 80%;
   margin-left: 10%;
   margin-top: 15px;
@@ -70,26 +69,25 @@ h1 {
 
 
 .catalogo {
-  display: flex;      
-  gap: 20px;         
-  flex-wrap: wrap;     
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .coral {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
   background-color: #f0f0f0;
-  
 }
 
 .vestidos {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
@@ -101,7 +99,6 @@ h1 {
 .aurora {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
@@ -110,7 +107,6 @@ h1 {
 .deserto {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
@@ -120,7 +116,6 @@ h1 {
 .turquesa {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
@@ -129,7 +124,6 @@ h1 {
 .luna {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
@@ -139,7 +133,6 @@ h1 {
 .luna-di {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
@@ -148,11 +141,25 @@ h1 {
 .rose {
   width: 191px;
   height: 289px;
-  flex-shrink: 0;
   aspect-ratio: 191/289;
   width: 200px;                 
   border-radius: 20px;       
   background-color: #f0f0f0;
-  
 }
 
+.jade {
+  width: 191px;
+  height: auto;
+  aspect-ratio: 191/289;
+  width: 200px;                 
+  border-radius: 20px;       
+  background-color: #f0f0f0;
+}
+.jade-saia {
+  width: 191px;
+  height: 289px;
+  aspect-ratio: 191/289;
+  width: auto;                 
+  border-radius: 20px;       
+  background-color: #f0f0f0;
+}
