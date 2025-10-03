@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  /* background-color: antiquewhite;  */
+}
+
+header {
+  width: 100%;
+  height: 9.0625rem;
+  background-color: #172335;
+
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 13.8125rem;
+  height: 7.875rem;  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5F84A2;
+  display: flex;
+  justify-content: center;
+  font-weight: 400; 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-family: "Marcellus", serif;
+
+}
+
+li a:hover {
+  background-color: #172335;
+  border-radius: 110%;
+}
+
+.topnav {
+  background: transparent; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 20px;              
+  padding: 10px 30px; 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 110%;
+}
+
+.topnav a:hover {
+  background-color: #5F84A2;
+  color: rgb(236, 236, 236);
+  border-radius: 100%;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  margin-left: auto;
+  background-color: transparent;
+  padding: 5px;
+  border: 2px solid white;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 15px;
+  font-family: "Marcellus", serif;
+  border-radius: 16px;
+}
+
+.topnav input[type=text]:hover {
+  background-color: white;
+  color: #172335; 
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+
+
+h1 {
+  width: 23.0625rem;
+  height: 4rem;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Marcellus SC";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+  padding-left: 2px;
+}
+
+.produtos {
+    display: grid;
+    padding: 2rem;
+}
+
+.skincare1 {
+    margin-bottom: 1rem;
+    transition: 0.3ms;
+    width: 11.0625rem;
+    height: 14.75rem;
+    margin-top: 3rem;
+}
+
+.Skincare {
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #00000080;
+    padding: 0.5rem;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 3rem;
+}
+
+.skincare1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+h2 {
+  width: 11.0625rem;
+  height: 2.875rem;
+  font-family: "Marcellus SC";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+h3 {
+  width: 11.0625rem;
+  height: 2.875rem;
+  font-family: "Marcellus SC";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+ 
+    
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+    
+footer {
+    background-color: #172335;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
+footer p {
+    font-size: 1rem;
+}
+
