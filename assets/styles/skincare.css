@@ -183,8 +183,8 @@ h3 {
   font-weight: 400;
   line-height: normal;
 }
-
-
+ 
+    
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
