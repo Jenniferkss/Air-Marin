@@ -3,18 +3,12 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-}
-
-body {
-  /* background-color: antiquewhite;  */
 }
 
 header {
   width: 100%;
   height: 9.0625rem;
   background-color: #172335;
-
   display: flex;
   justify-content: center;
 }
@@ -132,11 +126,6 @@ h1 {
   padding-left: 2px;
 }
 
-.produtos {
-    display: grid;
-    padding: 2rem;
-}
-
 .skincare1 {
     margin-bottom: 1rem;
     transition: 0.3ms;
@@ -146,10 +135,9 @@ h1 {
 }
 
 .Skincare {
-    text-align: center;
-    font-size: 2.5rem;
-    border-bottom: 3px solid #00000080;
-    padding: 0.5rem;
+  border-bottom: 3px solid #00000080;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .produtos {
@@ -157,6 +145,8 @@ h1 {
   flex-direction: column;
   text-align: center;
   margin-left: 3rem;
+  width: 250px;
+  padding: 2.5rem;
 }
 
 .skincare1:hover {
@@ -186,9 +176,9 @@ h3 {
  
     
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+
 }
     
 footer {
@@ -196,7 +186,6 @@ footer {
     color: white;
     text-align: center;
     padding: 2%;
-    width: 100%;
 }
 footer p {
     font-size: 1rem;
