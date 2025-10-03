@@ -13,6 +13,7 @@ header {
 
   display: flex;
   justify-content: center;
+
 }
 
 header img {
@@ -47,84 +48,114 @@ li a:hover {
   background-color: #111111;
 }
 
+h1{
+  border-bottom: 0.9px solid black;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .colar {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .corrente {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .concha {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .brinco {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .rosa {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .perola {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .bolsa {
-  width: 176px;
+  width: 1711.0625rem6px;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .escamas {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
+   
+
 
 .silver {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .dourado {
-  width: 176px;
+  width: 11.0625rem;
   height: 261px;
   flex-shrink: 0;
   aspect-ratio: 176/261;
   border-radius: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .section-acessorio {
