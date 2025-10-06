@@ -60,11 +60,45 @@ li a:hover {
 }
 
 h1 {
-  border-bottom: 0.9px solid black;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  width: 23.0625rem;
+  height: 4rem;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Marcellus SC";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+  padding-left: 2px;
+}
+
+h2 {
+  width: 11.0625rem;
+  height: 2.875rem;
+  /* flex-shrink: 0; */
+  /* color: #000; */
+  font-family: "Marcellus SC";
+  font-size: 1.3rem;
+  /* font-style: normal; */
+  font-weight: 400;
+  /* line-height: normal; */
+  /* margin-left: 13%; */
+  line-height: 1rem;
+}
+
+h3 {
+  width: 11.0625rem;
+  height: 2.875rem;
+  /* flex-shrink: 0; */
+  /* color: #000; */
+  font-family: "Marcellus SC";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* margin-left: 13%; */
+  margin-top: -24px;
 }
 
 
@@ -81,83 +115,57 @@ h1 {
   height: 289px;
   aspect-ratio: 191/289;
   width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
 }
 
 .vestidos {
   width: 191px;
   height: 289px;
   aspect-ratio: 191/289;
-  width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
-  margin-left: 20px;
-  display: flex;
+  width: 200px;  
 }
 
 .aurora {
   width: 191px;
   height: 289px;
   aspect-ratio: 191/289;
-  width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
+  width: 200px;               
 }
+
 .deserto {
   width: 191px;
   height: 289px;
   aspect-ratio: 191/289;
   width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
 }
 
-.turquesa {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
-}
-.luna {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
-}
-
-.luna-di {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
-}
 .rose {
   width: 191px;
   height: 289px;
   aspect-ratio: 191/289;
   width: 200px;                 
+}
+
+
+.catalogo-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.jade {
+  width: 100px;
+  height: auto;
+  aspect-ratio: 191/289;
+  width: 100px;                 
   border-radius: 20px;       
   background-color: #f0f0f0;
 }
 
-.jade {
-  width: 191px;
-  height: auto;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
-}
 .jade-saia {
-  width: 191px;
-  height: 289px;
+  width: 100px;
+  height: 200px;
   aspect-ratio: 191/289;
   width: auto;                 
   border-radius: 20px;       
