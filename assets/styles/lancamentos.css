@@ -1,24 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
-
-li a:hover {
+nav li a:hover {
   background-color: #172335;
   border-radius: 110%;
 }
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Marcellus', serif;
   background-color: #f7f7f7;
   color: #333;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
 }
 
-/* Header */
+main {
+  flex: 1 0 auto;      
+  min-height: calc(100vh - 9rem - 3rem); 
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   width: 100%;
   height: 9rem;
@@ -33,36 +43,30 @@ header img {
   height: auto;
 }
 
-/* Navigation */
 nav ul {
   list-style: none;
-  display: flex;
+  display: flex; 
   justify-content: center;
   background-color: #5f84a2;
   flex-wrap: wrap;
 }
 
 nav li {
-  margin: 0;
-}
-
-nav a {
   display: block;
   padding: 1rem 1.5rem;
   color: white;
-  text-decoration: none;
   font-weight: 400;
   transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-  background-color: #172335;
+nav a {
+  color: white;        
+  text-decoration: none;
 }
 
-/* Lançamentos */
-.lancamentos {
-  text-align: center;
-  padding: 2rem 1rem;
+nav a:hover {
+  background-color: #172335;
+  color: white;             
 }
 
 .lancamentos h1 {
@@ -71,28 +75,33 @@ nav a:hover {
 }
 
 .linha-horizontal {
-  width: 80%;
-  height: 3px;
+  width: 90%;
+  height: 2px;
   background-color: #00000080;
   margin: 0 auto 2rem auto;
 }
 
-/* Produtos grid */
 .produtos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  padding: 0 5%;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem; 
+  width: 100%;
+  padding: 0 2%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
   justify-items: center;
+  min-height: 50vh; 
+  overflow-x: hidden;
 }
 
-/* Produto individual */
+/* produto individual */
 .produto {
+  width: 200px; 
+  max-width: 180px;
   background-color: white;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -105,35 +114,39 @@ nav a:hover {
   height: auto;
   border-radius: 4px;
   margin-bottom: 0.5rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; 
 }
 
 .produto img:hover {
   transform: scale(1.05);
-  cursor: pointer;
+  cursor: pointer; 
 }
 
+h1, h2 {
+  padding: 1rem 3%; 
+  box-sizing: border-box;
+}
+
+.linha-horizontal2 {
+  width: 95%;
+  height: 1px;
+  background-color: #00000080;
+  margin: 0 auto 2rem auto;
+}
 .produto h2 {
   font-size: 1.2rem;
-  margin: 0.5rem 0 0.3rem;
+  margin: 0.5 0 0.5rem 0;
 }
 
 .produto h3 {
   font-size: 1rem;
-  color: #666;
+  color: #667;
 }
 
-/* Footer */
 footer {
   margin-top: 3rem;
   background-color: #172335;
   color: white;
   text-align: center;
   padding: 1.5rem;
-  font-size: 1rem;
-}
-
-.h2 {
-  align-items: left;
-  
 }
