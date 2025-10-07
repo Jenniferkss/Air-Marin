@@ -12,18 +12,19 @@ body {
 
 header {
   width: 100%;
-  height: 9.0625rem;
+  height: 6rem; /* menor que antes */
   background-color: #172335;
-
   display: flex;
   justify-content: center;
+  align-items: center; /* centraliza verticalmente os itens */
 }
 
 header img {
-  width: 13.8125rem;
-  height: 7.875rem;  
+  height: 5rem;  /* altura menor */
+  width: auto;   /* mantém proporção */
+  /* opcional: max-height para não ficar gigante em telas grandes */
+  max-height: 7.875rem;
 }
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -120,4 +121,24 @@ li a:hover {
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita rolagem lateral */
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ocupa toda a tela */
+  overflow: hidden;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre toda a área sem distorcer */
+  display: block;
 }
