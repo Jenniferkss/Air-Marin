@@ -5,9 +5,9 @@ main{
   background-image: url('../img/login.png'); 
   background-repeat: no-repeat; 
   background-size: cover; 
-  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 section {
@@ -15,7 +15,6 @@ section {
     text-align: center;
     color: #E9E9E9;
     font-size: 28px;
-    position: absolute;
     width: 20rem;
     height: 14rem;
     margin: 700px;
