@@ -7,7 +7,7 @@ nav li a:hover {
 
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,17 +17,17 @@ body {
   font-family: 'Marcellus', serif;
   background-color: #f7f7f7;
   color: #333;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;      
-  min-height: calc(100vh - 9rem - 3rem); 
+  flex: 1 0 auto;
+  min-height: calc(100vh - 9rem - 3rem);
   display: flex;
   flex-direction: column;
-  margin-top: 14rem; 
+  margin-top: 14rem;
 }
 
 header {
@@ -42,12 +42,11 @@ header {
 header img {
   width: 13rem;
   height: auto;
-  max-width: 90%;
 }
 
 nav ul {
   list-style: none;
-  display: flex; 
+  display: flex;
   justify-content: center;
   background-color: #5f84a2;
   flex-wrap: wrap;
@@ -62,13 +61,13 @@ nav li {
 }
 
 nav a {
-  color: white;        
+  color: white;
   text-decoration: none;
 }
 
 nav a:hover {
   background-color: #172335;
-  color: white;             
+  color: white;
 }
 
 .lancamentos h1 {
@@ -86,18 +85,18 @@ nav a:hover {
 .produtos {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 1.2rem; 
+  gap: 1.2rem;
   width: 100%;
   padding: 0 2%;
   box-sizing: border-box;
   margin-bottom: 40px;
   justify-items: center;
-  min-height: 50vh; 
+  min-height: 50vh;
   overflow-x: hidden;
 }
 
 .produto {
-  width: 200px; 
+  width: 200px;
   max-width: 180px;
   object-fit: cover;
   background-color: white;
@@ -116,18 +115,18 @@ nav a:hover {
   height: auto;
   border-radius: 4px;
   margin-bottom: 0.5rem;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   aspect-ratio: 3 / 5;
   object-fit: contain;
 }
 
 .produto img:hover {
   transform: scale(1.05);
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 h1, h2 {
-  padding: 1rem 3%; 
+  padding: 1rem 3%;
   box-sizing: border-box;
 }
 
@@ -166,20 +165,23 @@ nav {
 }
 
 nav {
-  top: 9rem; 
+  top: 9rem;
 }
 
+/* ====== TOPO ====== */
 .topnav {
-  background: transparent; 
+  background: transparent;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
-  gap: 20px;              
-  padding: 10px 30px; 
-  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .topnav a {
+  float: left;
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -187,6 +189,7 @@ nav {
   text-decoration: none;
   font-size: 17px;
   border-radius: 110%;
+  flex: 0 0 auto;
 }
 
 .topnav a:hover {
@@ -195,98 +198,90 @@ nav {
   border-radius: 100%;
 }
 
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
 .topnav input[type=text] {
-  margin-left: auto;
   background-color: transparent;
-  padding: 5px;
+  padding: 5px 10px;
   border: 2px solid white;
-  margin-top: 8px;
-  margin-right: 16px;
   font-size: 15px;
   font-family: "Marcellus", serif;
   border-radius: 16px;
+  flex: 0 1 200px;
   min-width: 100px;
-  max-width: 100%;
 }
 
 .topnav input[type=text]:hover {
   background-color: white;
-  color: #172335; 
+  color: #172335;
 }
 
-/* RESPONSIVIDADE */
-@media screen and (max-width: 1200px) {
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 1200px) {
   .produtos {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .produtos {
     grid-template-columns: repeat(3, 1fr);
   }
-  header img {
-    width: 10rem;
+
+  .topnav {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
   }
-  main {
-    margin-top: 12rem;
+
+  .topnav input[type=text] {
+    flex: 0 1 150px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .produtos {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .topnav {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 8px 15px;
-    gap: 10px;
+    padding: 8px 10px;
+    gap: 8px;
   }
+
+  .topnav a {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
   .topnav input[type=text] {
-    flex: 1;
-    max-width: 140px;
-  }
-  header img {
-    width: 9rem;
-  }
-  nav ul {
-    flex-wrap: wrap;
+    flex: 0 1 120px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .produtos {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-  header {
-    height: 6rem;
-  }
-  nav {
-    top: 6rem;
-  }
-  header img {
-    width: 8rem;
-  }
+
   .topnav {
-    gap: 8px;
-    padding: 5px 10px;
+    gap: 5px;
   }
+
   .topnav a {
-    font-size: 15px;
-    padding: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
   }
+
   .topnav input[type=text] {
-    font-size: 13px;
-    padding: 4px;
-    max-width: 120px;
+    flex: 0 1 100px;
   }
-  main {
-    margin-top: 10rem;
+}
+
+@media (max-width: 400px) {
+  .produtos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .topnav input[type=text] {
+    flex: 0 1 90px;
   }
 }
