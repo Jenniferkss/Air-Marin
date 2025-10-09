@@ -142,6 +142,7 @@ h1 {
   border-bottom: 3px solid #00000080;
   width: 80%;
   margin-left: 10%;
+  margin-top: 16%;
 }
 
 .produtos {
@@ -161,7 +162,6 @@ h1 {
 .skincare1:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 h2 {
@@ -190,7 +190,7 @@ h3 {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  box-sizing: border-box;
+  margin-top: 1rem;
 
 }
     
@@ -204,4 +204,25 @@ footer p {
     font-size: 1rem;
 }
 
+header,
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
+nav {
+  top: 9rem; 
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
