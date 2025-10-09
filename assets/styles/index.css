@@ -13,7 +13,6 @@ html, body {
   font-family: "Marcellus", serif;
 }
 
-/* ===== HEADER ===== */
 header {
   width: 100%;
   height: 6rem;
@@ -29,7 +28,6 @@ header img {
   max-height: 7.875rem;
 }
 
-/* ===== MENU UL/LI ===== */
 ul {
   list-style-type: none;
   margin: 0;
@@ -43,7 +41,7 @@ ul {
 }
 
 li {
-  float: none; /* remove float para responsividade */
+  float: none; 
 }
 
 li a {
@@ -65,12 +63,12 @@ li a:hover {
 .topnav {
   background: transparent;
   display: flex;
-  justify-content: flex-start; /* alinha à esquerda */
+  justify-content: flex-start; 
   align-items: center;
   gap: 15px;
   padding: 10px 20px;
-  overflow-x: auto; /* scroll horizontal em telas pequenas */
-  white-space: nowrap; /* impede quebra de linha */
+  overflow-x: auto; 
+  white-space: nowrap; 
 }
 
 .topnav a {
@@ -94,7 +92,7 @@ li a:hover {
   color: white;
 }
 
-/* ===== BARRA DE PESQUISA ===== */
+
 .topnav input[type=text] {
   display: inline-block;
   background-color: transparent;
@@ -104,15 +102,14 @@ li a:hover {
   font-size: 15px;
   min-width: 120px;
   max-width: 200px;
-  flex-shrink: 0; /* não encolhe demais */
+  flex-shrink: 0; 
   box-sizing: border-box;
 }
 
-/* ===== BANNER / VIDEO ===== */
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh; /* ocupa toda altura da tela */
+  height: 100vh; 
   overflow: hidden;
 }
 
@@ -122,12 +119,12 @@ li a:hover {
   left: 50%;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* preenche mantendo proporção */
-  transform: translate(-50%, -50%); /* centraliza vídeo */
+  object-fit: cover; 
+  transform: translate(-50%, -50%); 
   display: block;
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
 @media screen and (max-width: 900px) {
   header {
     height: 5rem;
