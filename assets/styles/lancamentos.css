@@ -182,3 +182,51 @@ nav {
     border: 1px solid #ccc;
   }
 }
+
+.topnav {
+  background: transparent; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 20px;              
+  padding: 10px 30px; 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 110%;
+}
+
+.topnav a:hover {
+  background-color: #5F84A2;
+  color: rgb(236, 236, 236);
+  border-radius: 100%;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  margin-left: auto;
+  background-color: transparent;
+  padding: 5px;
+  border: 2px solid white;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 15px;
+  font-family: "Marcellus", serif;
+  border-radius: 16px;
+}
+
+.topnav input[type=text]:hover {
+  background-color: white;
+  color: #172335; 
+}
