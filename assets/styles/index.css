@@ -3,6 +3,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Marcellus", serif;
 }
 
 header {
@@ -15,10 +23,11 @@ header {
 }
 
 header img {
-  height: 5rem; 
-  width: auto; 
+  height: 5rem;
+  width: auto;
   max-height: 7.875rem;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -27,11 +36,12 @@ ul {
   background-color: #5F84A2;
   display: flex;
   justify-content: center;
-  font-weight: 400; 
+  flex-wrap: wrap; 
+  font-weight: 400;
 }
 
 li {
-  float: left;
+  float: none; 
 }
 
 li a {
@@ -41,7 +51,7 @@ li a {
   padding: 16px;
   text-decoration: none;
   font-family: "Marcellus", serif;
-
+  white-space: nowrap;
 }
 
 li a:hover {
@@ -50,16 +60,16 @@ li a:hover {
 }
 
 .topnav {
-  background: transparent; 
+  background: transparent;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
-  gap: 20px;              
-  padding: 10px 30px; 
+  gap: 20px;
+  padding: 10px 30px;
+  flex-wrap: wrap; 
 }
 
 .topnav a {
-  float: left;
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -81,53 +91,63 @@ li a:hover {
 }
 
 .topnav input[type=text] {
-  margin-left: auto;
   background-color: transparent;
   padding: 5px;
   border: 2px solid white;
-  margin-top: 8px;
-  margin-right: 16px;
   font-size: 15px;
   font-family: "Marcellus", serif;
   border-radius: 16px;
+  min-width: 100px;
+  max-width: 100%;
+  flex: 1 1 auto; 
+  margin-left: auto; 
+  margin-top: 8px;
+  margin-right: 16px;
+  box-sizing: border-box;
 }
 
 .topnav input[type=text]:hover {
   background-color: white;
-  color: #172335; 
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  color: #172335;
 }
 
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
   overflow: hidden;
 }
 
 .banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
+  transform: translate(-50%, -50%); 
   display: block;
 }
 
+@media screen and (max-width: 900px) {
+  header {
+    height: 5rem;
+  }
+  header img {
+    height: 4rem;
+    max-height: 6rem;
+  }
+  li a {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .topnav input[type=text] {
+    font-size: 14px;
+    padding: 4px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    f
