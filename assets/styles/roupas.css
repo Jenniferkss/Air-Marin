@@ -1,173 +1,163 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
+nav li a:hover {
+  background-color: #172335;
+  border-radius: 110%;
+}
+
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body {
-  /* background-color: antiquewhite;  */
+  margin: 0;
+  padding: 0;
+  font-family: 'Marcellus', serif;
+  background-color: #f7f7f7;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 10 auto;
+  min-height: calc(100vh - 9rem - 3rem);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   width: 100%;
-  height: 9.0625rem;
+  height: 9rem;
   background-color: #172335;
   display: flex;
-  justify-content: center
+  align-items: center;
+  justify-content: center;
 }
+
 
 header img {
-  width: 13.8125rem;
-  height: 7.875rem
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #5F84A2;
-
-  display: flex;
-  justify-content: center;
-
-  font-weight: 400
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  /* text-align: center; */
-  padding: 16px;
-  text-decoration: none
-}
-
-li a:hover {
-  background-color: #172335;
-  border-radius: 110%
-}
-
-.Roupas {
-    /* border-bottom: 3px solid blackground: rgba( 0,0,0,50); */
-    width: 80%;
-    margin-left: 10%;
-}
-
-h1 {
-  width: 23.0625rem;
-  height: 4rem;
-  flex-shrink: 0;
-  color: #000;
-  font-family: "Marcellus SC";
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 20px;
-  padding-left: 2px;
-}
-
-h2 {
-  width: 11.0625rem;
-  height: 2.875rem;
-  /* flex-shrink: 0; */
-  /* color: #000; */
-  font-family: "Marcellus SC";
-  font-size: 1.3rem;
-  /* font-style: normal; */
-  font-weight: 400;
-  /* line-height: normal; */
-  /* margin-left: 13%; */
-  line-height: 1rem;
-}
-
-h3 {
-  width: 11.0625rem;
-  height: 2.875rem;
-  /* flex-shrink: 0; */
-  /* color: #000; */
-  font-family: "Marcellus SC";
-  font-size: 0.9375rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  /* margin-left: 13%; */
-  margin-top: -24px;
-}
-
-
-.catalogo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.coral {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-}
-
-.vestidos {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;  
-}
-
-.aurora {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;               
-}
-
-.deserto {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-}
-
-.rose {
-  width: 191px;
-  height: 289px;
-  aspect-ratio: 191/289;
-  width: 200px;                 
-}
-
-
-.catalogo-2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.jade {
-  width: 100px;
+  width: 13rem;
   height: auto;
-  aspect-ratio: 191/289;
-  width: 100px;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
 }
 
-.jade-saia {
-  width: 100px;
-  height: 200px;
-  aspect-ratio: 191/289;
-  width: auto;                 
-  border-radius: 20px;       
-  background-color: #f0f0f0;
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #5f84a2;
+  flex-wrap: wrap;
+}
+
+nav li {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #172335;
+  color: white;
+}
+
+.Roupas h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Linha {
+  width: 90%;
+  height: 2px;
+  background-color: 0 auto 2rem auto;
+  margin: 0auto 2rem auto;
+}
+
+.looks {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+  padding: 02%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  justify-items: center;
+  min-height: 50vh;
+  overflow-x: hidden;
+}
+
+.look {
+  width: 200px;
+  max-width: 180px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 04px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.look:hover {
+  transform: translateY(-5px);
+}
+
+.look img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.look img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h1, h2{
+  padding: 1rem 3%;
+  box-sizing: border-box;
+}
+
+.linha-horizontal {
+  width: 95%;
+  height: 1px;
+  background-color: #00000080;
+  margin: 0 auto 2rem auto;
+}
+
+.look h2 {
+  font-size: 1rem;
+  color: #667;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: #172335;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
