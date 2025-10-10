@@ -66,6 +66,7 @@ nav a {
 nav a:hover {
   background-color: #172335;
   color: white;
+  border-radius: 110%;
 }
 
 /* ===== LANÇAMENTOS ===== */
