@@ -242,3 +242,132 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+  .Maio1 {
+    flex: 0 0 calc(25% - 16px); /* 4 itens por linha */
+  }
+  .maio1 {
+    width: 10rem;
+    height: 13rem;
+  }
+  .maio2 {
+    width: 10rem;
+    height: 15rem;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Maio1 {
+    flex: 0 0 calc(33.33% - 16px); /* 3 itens por linha */
+  }
+  .maio1 {
+    width: 9rem;
+    height: 12rem;
+  }
+  .maio2 {
+    width: 9rem;
+    height: 13rem;
+    margin-left: 18%;
+  }
+  h1 {
+    font-size: 2rem;
+    width: 80%;
+  }
+  h2 {
+    font-size: 1.2rem;
+    width: 9rem;
+  }
+  h3 {
+    font-size: 0.875rem;
+    width: 9rem;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Maio1 {
+    flex: 0 0 calc(50% - 16px); /* 2 itens por linha */
+  }
+  .maio1 {
+    width: 8rem;
+    height: 11rem;
+  }
+  .maio2 {
+    width: 8rem;
+    height: 12rem;
+    margin-left: 15%;
+    margin-top: -70%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+  h2 {
+    font-size: 1.1rem;
+    width: 8rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+    width: 8rem;
+    margin-top: -16px;
+  }
+  header img {
+    height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Maio1 {
+    flex: 0 0 100%; /* 1 item por linha */
+    margin: 0 0 20px 0;
+  }
+  .maio1 {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  .maio2 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: -40%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+  }
+  h2, h3 {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+  header img {
+    height: 3.5rem;
+  }
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  li {
+    float: none;
+  }
+  .topnav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+  }
+  .topnav a, .topnav input[type=text] {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
