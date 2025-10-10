@@ -36,8 +36,9 @@ ul {
   background-color: #5F84A2;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   font-weight: 400;
+  gap: 5px;
 }
 
 li {
@@ -59,15 +60,13 @@ li a:hover {
   border-radius: 110%;
 }
 
-
 .topnav {
-  background: transparent;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
   padding: 10px 30px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .topnav a {
@@ -78,6 +77,7 @@ li a:hover {
   text-decoration: none;
   font-size: 17px;
   border-radius: 110%;
+  flex: 0 0 auto;
 }
 
 .topnav a:hover {
@@ -115,7 +115,7 @@ li a:hover {
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -126,10 +126,10 @@ li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: none;
   display: block;
 }
 
+/* ----- RESPONSIVO ----- */
 @media screen and (max-width: 900px) {
   header {
     height: 5rem;
@@ -151,33 +151,37 @@ li a:hover {
 
 @media screen and (max-width: 600px) {
   ul {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
   li a {
     padding: 10px 12px;
     font-size: 14px;
   }
 
   .topnav {
-    flex-direction: column; 
-    align-items: stretch;   
-    gap: 8px;                 
-    padding: 10px 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza no celular */
+    gap: 8px;
+    padding: 8px 10px;
   }
 
+  /* Garante que ícones fiquem em linha */
   .topnav a {
-    width: 100%;            
-    text-align: center;
-    margin: 0;
-    padding: 12px 0;
+    flex: 0 0 auto; /* não permite crescer ou encolher */
+    width: auto;
+    padding: 8px 12px;
   }
 
+  /* Input quebra para linha só se necessário */
   .topnav input[type=text] {
-    width: 100%;           
-    margin: 0;              
-    padding: 6px;
+    flex: 1 1 100%;
+    min-width: 120px;
     max-width: 100%;
+    margin: 4px 0 0 0;
+    padding: 6px;
   }
 }
 
@@ -191,10 +195,10 @@ li a:hover {
   }
   li a {
     font-size: 13px;
-    padding: 8px 10px;
+    padding: 6px 8px;
   }
   .topnav input[type=text] {
     font-size: 12px;
-    padding: 3px;
+    padding: 4px;
   }
 }
