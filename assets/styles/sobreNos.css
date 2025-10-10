@@ -139,7 +139,7 @@ footer p {
 }
 
 /* Adiciona Responsividade*/
-/* RESPONSIVIDADE */
+
 @media (max-width: 1200px) {
   h1 {
     width: 90%;
