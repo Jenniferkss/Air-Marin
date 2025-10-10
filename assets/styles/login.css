@@ -1,59 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
-main{
-  height: 100vh;
-  background-image: url('../img/login.png'); 
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  display: flex;
-  align-items: center;
-  margin-top: 10%;
-  justify-content: center;
-}
+main {
+    min-height: 100vh;
+    background-image: url('../img/login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centraliza no eixo vertical */
+    padding-top: 5rem; /* evita sobreposição com o header fixo */
+    box-sizing: border-box;
+  }
 
+/* Card de login */
 section {
-    background-color: #172335fd;
-    text-align: center;
-    color: #E9E9E9;
-    font-size: 28px;
-    width: 100%;
-    max-width: 22rem;
-    height: 14rem;
-    margin: 700px;
-    margin-top: 50%;
-    padding: 3.5rem;
-    border-radius: 15px;
-    font-family: "Marcellus SC";
-
+  background-color: #172335fd;
+  text-align: center;
+  color: #E9E9E9;
+  font-size: 28px;
+  width: 100%;
+  max-width: 22rem;
+  padding: 3.5rem;
+  border-radius: 15px;
+  font-family: "Marcellus SC";
+  margin: 0; /* sem margens */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-input{
-    border-radius: 15px;
-    margin: 5px; 
-    padding: 5px;
-    width: 20rem;
-    margin-top: 25px;
+input {
+  border-radius: 15px;
+  margin: 5px; 
+  padding: 5px;
+  width: 15rem;
+  margin-top: 25px;
 }
 
-#criar-conta {
-    margin-top: 20px;
+.botao {
+  background-color: #1e1c25;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
 }
 
-.botao{
-    background-color: #1e1c25;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 8px;
-    transition: background-color 0.5s ease;
-    margin-top: 20px;
-}
-.botao:hover{
-    background-color: #1c2b42c5;
+.botao:hover {
+  background-color: #1c2b42c5;
 }
 
+/* Header fixo */
 header {
   position: fixed;
   top: 0;
@@ -61,4 +59,3 @@ header {
   width: 100%;
   z-index: 1000;
 }
-
