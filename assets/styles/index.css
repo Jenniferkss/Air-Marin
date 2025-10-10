@@ -57,7 +57,7 @@ li a:hover {
 
 /* Add a black background color to the top navigation bar */
 .topnav {
-  background: transparent; 
+  background: white; 
   display: flex;
   justify-content: flex-end; 
   align-items: center;
