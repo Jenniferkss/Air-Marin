@@ -138,3 +138,118 @@ footer p {
   font-size: 1rem;
 }
 
+/* Adiciona Responsividade*/
+/* RESPONSIVIDADE */
+@media (max-width: 1200px) {
+  h1 {
+    width: 90%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+  }
+
+  header img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .caixa {
+    font-size: 1.3rem;
+    padding: 12px 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media (max-width: 900px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  li a {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    padding-left: 2%;
+    margin-top: 0;
+  }
+
+  .caixa {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+
+  .caixa h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  header img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  h1 {
+    width: 95%;
+    padding-left: 2.5%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .caixa {
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .caixa h2 {
+    font-size: 1.2rem;
+  }
+
+  .caixa p,
+  .caixa ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  li a {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .caixa {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .caixa h2 {
+    font-size: 1rem;
+  }
+}
