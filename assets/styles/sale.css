@@ -70,7 +70,7 @@ nav a:hover {
   color: white;
 }
 
-.Roupas h1 {
+.Sale h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -82,7 +82,7 @@ nav a:hover {
   margin: 0auto 2rem auto;
 }
 
-.looks {
+.peças {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.2rem;
@@ -95,7 +95,7 @@ nav a:hover {
   overflow-x: hidden;
 }
 
-.look {
+.peça {
   width: 200px;
   max-width: 180px;
   background-color: white;
@@ -105,11 +105,11 @@ nav a:hover {
   transition: transform 0.2s ease-in-out;
 }
 
-.look:hover {
+.peça:hover {
   transform: translateY(-5px);
 }
 
-.look img {
+.peça img {
   width: 100%;
   height: auto;
   border-radius: 4px;
@@ -117,7 +117,7 @@ nav a:hover {
   transition: transform 0.3s ease;
 }
 
-.look img:hover {
+.peça img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -134,13 +134,13 @@ h1, h2{
   margin: 0 auto 2rem auto;
 }
 
-.look h2 {
+.peça h2 {
   font-size: 1rem;
   margin: 0.5 0 0.5rem 0;
   color: rgb(0, 0, 0);
 }
 
-.look h3 {
+.peça h3 {
   font-size: 1rem;
   color: #667;
 }
