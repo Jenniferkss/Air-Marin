@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
-nav li a:hover {
-  background-color: #172335;
-  border-radius: 110%;
-}
-
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +26,7 @@ main {
   margin-top: 14rem;
 }
 
+/* ===== HEADER ===== */
 header {
   width: 100%;
   height: 9rem;
@@ -44,6 +41,7 @@ header img {
   height: auto;
 }
 
+/* ===== NAV ===== */
 nav ul {
   list-style: none;
   display: flex;
@@ -70,6 +68,7 @@ nav a:hover {
   color: white;
 }
 
+/* ===== LANÇAMENTOS ===== */
 .lancamentos h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -82,9 +81,10 @@ nav a:hover {
   margin: 0 auto 2rem auto;
 }
 
+/* ===== PRODUTOS ===== */
 .produtos {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr); /* desktop padrão */
   gap: 1.2rem;
   width: 100%;
   padding: 0 2%;
@@ -98,7 +98,6 @@ nav a:hover {
 .produto {
   width: 200px;
   max-width: 180px;
-  object-fit: cover;
   background-color: white;
   padding: 1rem;
   border-radius: 8px;
@@ -125,6 +124,16 @@ nav a:hover {
   cursor: pointer;
 }
 
+.produto h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.produto h3 {
+  font-size: 1rem;
+  color: #667;
+}
+
 h1, h2 {
   padding: 1rem 3%;
   box-sizing: border-box;
@@ -137,16 +146,7 @@ h1, h2 {
   margin: 0 auto 2rem auto;
 }
 
-.produto h2 {
-  font-size: 1.2rem;
-  margin: 0.5 0 0.5rem 0;
-}
-
-.produto h3 {
-  font-size: 1rem;
-  color: #667;
-}
-
+/* ===== FOOTER ===== */
 footer {
   margin-top: 3rem;
   background-color: #172335;
@@ -155,6 +155,7 @@ footer {
   padding: 1.5rem;
 }
 
+/* ===== FIX HEADER & NAV ===== */
 header,
 nav {
   position: fixed;
@@ -168,7 +169,7 @@ nav {
   top: 9rem;
 }
 
-/* ====== TOPO ====== */
+/* ===== TOPNAV ===== */
 .topnav {
   background: transparent;
   display: flex;
@@ -181,7 +182,6 @@ nav {
 }
 
 .topnav a {
-  float: left;
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -214,7 +214,7 @@ nav {
   color: #172335;
 }
 
-/* ====== RESPONSIVIDADE ====== */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 1200px) {
   .produtos {
     grid-template-columns: repeat(4, 1fr);
@@ -259,7 +259,7 @@ nav {
 
 @media (max-width: 500px) {
   .produtos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha no celular */
   }
 
   .topnav {
@@ -278,7 +278,7 @@ nav {
 
 @media (max-width: 400px) {
   .produtos {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* mantém 2 produtos no celular menor */
   }
 
   .topnav input[type=text] {
