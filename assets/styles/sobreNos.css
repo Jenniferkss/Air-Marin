@@ -53,7 +53,7 @@ li a:hover {
 }
 
 body {
-  background-image: url(/assets/img/fundoSobreNos.png);
+  background-image: url(./../img/fundoSobreNos.png);
   background-attachment: fixed;
 }
 
