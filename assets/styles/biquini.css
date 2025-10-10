@@ -31,9 +31,7 @@ main {
 }
 header {
   width: 100%;
-  height: 9.0625rem;
-  /* flex-shrink: 0;*/
-  background: #172335;
+  height: 9rem;
   background-color: #172335;
   align-items: center;
   display: flex;
@@ -48,13 +46,10 @@ header img {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #5f84a2;
   display: flex;
   justify-content: center;
-  font-weight: 400;
+  flex-wrap: wrap;
 }
 
 nav li {
@@ -65,13 +60,13 @@ nav li {
   transition: background-color 0.3s ease;
 }
 
-li a {
-  background-color: #172335;
+nav a {
+  background-color:  #5f84a2;
   color: white;
-
+  text-decoration: none;
 }
 
-li a:hover {
+nav a:hover {
   background-color: #111111;
   color: white;
 }
@@ -80,114 +75,216 @@ h1{
 /*border-bottom: 0.9px solid black; */
 /*font-family: "Marcellus SC";*/
 font-size: 2.5rem;
-margin-bottom: 15px;
+margin-bottom: 0.5rem;
 }
 
-
-.santorini {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+.fileira-de-cima {
+  width: 90%;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto 2rem auto;
 }
 
-.dourada {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.doce {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.sol {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.brisa {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.mar {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.lua {
-  width: 1711.0625rem6px;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.areia{
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-   
-
-
-.tropical {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.noite {
-  width: 11.0625rem;
-  height: 261px;
-  flex-shrink: 0;
-  aspect-ratio: 176/261;
-  border-radius: 20px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.section-acessorio {
+.produtos {
   display: flex;
-  justify-content: space-evenly;
-  
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+  padding: 0.2%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  justify-items: center;
+  min-height: 50vh;
+  max-width: 1600px;
+  overflow-x: hidden;
+}
+
+.produto{
+  width: 600px;
+  height: 410px;
+  max-width: 180px;
+  object-fit: cover;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  width: 100%;
+  height: 220px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+  display: block;
+}
+
+.produto img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h1, h2 {
+  padding: 1rem 3%;
+  box-sizing: border-box;
+}
+
+.filiera-de-baixo {
+  width: 95%;
+  height: 1px;
+  background-color: #000000;
+  margin: 0 auto 2rem auto;
+}
+
+.produto h2 {
+  font-size: 1.2rem;
+  margin: 0.5 0 0.5rem 0;
+}
+
+.produto h3 {
+  margin: 10px 0 5px;
+  font-size: 1.05rem;
+  color: #667;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: #172335;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 110%;
+  flex: 0 0 auto;
+}
+
+.topnav a:hover {
+  background-color: #5F84A2;
+  color: rgb(236, 236, 236);
+  border-radius: 100%;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  background-color: transparent;
+  padding: 5px;
+  border: 2px solid white;
+  font-size: 15px;
+  font-family: "Marcellus", serif;
+  border-radius: 16px;
+  min-width: 100px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 16px;
+  box-sizing: border-box;
+}
+
+.topnav input[type=text]:hover {
+  background-color: white;
+  color: #172335;
+}
+
+
+/* ----- RESPONSIVO ----- */
+@media screen and (max-width: 900px) {
+  header {
+    height: 5rem;
+  }
+  header img {
+    height: 4rem;
+    max-height: 6rem;
+  }
+  li a {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .topnav input[type=text] {
+    font-size: 14px;
+    padding: 4px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .topnav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza no celular */
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  /* Garante que ícones fiquem em linha */
+  .topnav a {
+    flex: 0 0 auto; /* não permite crescer ou encolher */
+    width: auto;
+    padding: 8px 12px;
+  }
+
+  /* Input quebra para linha só se necessário */
+  .topnav input[type=text] {
+    flex: 1 1 100%;
+    min-width: 120px;
+    max-width: 100%;
+    margin: 4px 0 0 0;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 4.5rem;
+  }
+  header img {
+    height: 3.5rem;
+    max-height: 5rem;
+  }
+  li a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+  .topnav input[type=text] {
+    font-size: 12px;
+    padding: 4px;
+  }
 }
